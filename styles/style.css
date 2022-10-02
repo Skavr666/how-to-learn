@@ -16,6 +16,7 @@
   /* выше установили ограничения для секции */
   background-color:  #f2f2f2;
   display: flex;
+  align-items: center;
   position: relative;
 }
 
@@ -33,9 +34,9 @@
 }
 
 .header__title {
-  display: flex;
-  margin: auto 64px;
-  width: 730px;
+  margin: 0 0 0 64px;
+  max-width: 730px;
+  width: 100%;
   z-index: 3;
   line-height: 96px;
   font-size: 102px;
@@ -45,7 +46,8 @@
 .header__subtitle {
   position: absolute;
   margin: auto;
-  width: 388px;
+  max-width: 388px;
+  width: 100%;
   bottom: 30px;
   left: 64px;
   z-index: 3;
@@ -93,8 +95,9 @@
 }
 
 .two-columns__brief {
-  width: 175px;
-  margin: 0 40px 0 0;
+  max-width: 175px;
+  width:100%;
+  margin: 0;
   color: #2f80ed;
   line-height: 1.2;
   font-size: 18px;
@@ -183,7 +186,7 @@
 .feynman {
   background-color: #f2f2f2;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   padding-top: 100px;
   box-sizing: border-box;
   justify-content: center;
@@ -251,17 +254,16 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .section-title_theme_dark {
   color: #fff;
+  z-index: 3;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
+  z-index: 3;
 }
 
 .footer {
@@ -275,13 +277,16 @@
 .footer__columns {
   align-self: center;
   width: 90%;
-  min-height: 350px;
   display: flex;
   margin: auto;
   justify-content: space-between;
 }
 
-.footer__columns_content_copyright {
+.footer__column {
+  min-height: 250px;
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
   flex-wrap: wrap;
