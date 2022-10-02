@@ -245,6 +245,7 @@
   overflow: hidden;
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
+  background-size: contain;
   margin: 0;
 }
 
